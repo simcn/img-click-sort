@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>img click sort</title>
+	<script src="http://agro365.aliapp.com/js/jquery1.42.min.js"></script>
+	<script src="jquery.imgclicksort.js"></script>
+	<style>
+	
+	*{padding:0; margin:0;}
+	body{
+		padding:20px;
+	}
+	div li{
+		display:inline-block;
+		*display:inline;
+		*zoom:1;
+		margin:10px;
+
+		position: relative;
+	}
+
+	.J_make_num{
+		display:block;
+		background:rgba(37,119,227,0.9);
+		_background:#2577e3;
+		position: absolute;
+		top:0;
+		left:0;
+		text-align: center;
+		font-size: 28px;
+		color:#fff;
+		border-radius:0 0 20px 0;
+		padding:5px 8px;
+		font-family: Arial;
+	}
+
+	img{
+		width:180px;
+		height:130px;
+	}
+
+	</style>
+</head>
+<body>
+	
+	<h1>demo1</h1>
+	<div id="a-box">
+		<ul>
+			<li><img src="180x130.gif" alt=""></li>
+			<li><img src="180x130.gif" alt=""></li>
+			<li><img src="180x130.gif" alt=""></li>
+			<li><img src="180x130.gif" alt=""></li>
+		</ul>
+	</div>
+	
+	<h1>demo2</h1>
+	<div id="b-box">
+		<ul>
+			<li><img src="180x130.gif" alt=""></li>
+			<li><img src="180x130.gif" alt=""></li>
+			<li><img src="180x130.gif" alt=""></li>
+			<li><img src="180x130.gif" alt=""></li>
+		</ul>
+	</div>	
+
+
+	<script>
+	$(function () {
+
+	    $('#b-box ul').imgclicksort({
+	    	node:'li'
+	    });
+
+	    $('#a-box ul').imgclicksort({
+	    	node:'li'
+	    });    
+
+	});
+	</script>
+
+</body>
+</html>
