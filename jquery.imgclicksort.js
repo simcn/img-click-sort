@@ -1,15 +1,11 @@
 (function($) {
-	/**
-	 * 底层弹出注册弹出层组件 , 需要 cookie 与 jquery 支持
-	 * @param json参数
-	 * @returns this;
-	 */
+
 	$.fn.imgclicksort = function(opts) {
 
 		opts = $.extend({
-			'node':'li',
-			'num':'.J_make_num',
-			'startnum':1,
+			'node':'li', //节点
+			'num':'.J_make_num', //标签
+			'startnum':1, //起始标记
 			'callback': function() {}
 		}, opts);
 		
